@@ -6,14 +6,14 @@ O tema central que norteou o projeto de pesquisa foi a integração estratégica
 
 # TRABALHO DE CONCLUSÃO DE CURSO:
 
-- [TCC - ISmalteria](https://github.com/rose-del/ISmalteria/blob/f21bca3ffbd489a5db259237edfe9061f81d6359/TCC%20-%20ISmalteria%20(Vers%C3%A3o%20Corrigida)-1.pdf)
+#### - [TCC - ISmalteria](https://github.com/rose-del/ISmalteria/blob/f21bca3ffbd489a5db259237edfe9061f81d6359/TCC%20-%20ISmalteria%20(Vers%C3%A3o%20Corrigida)-1.pdf)
   
-- [Aplicação Mobile](https://github.com/rose-del/ISmalteria/tree/f21bca3ffbd489a5db259237edfe9061f81d6359/ISmalteria-mobile/ISmalteria---mobile)
+#### - [Aplicação Mobile](https://github.com/rose-del/ISmalteria/tree/f21bca3ffbd489a5db259237edfe9061f81d6359/ISmalteria-mobile/ISmalteria---mobile)
 <div>
   <img src="https://github.com/rose-del/ISmalteria/assets/119326136/b4cdcec6-b2ab-457d-be67-fe010eda3a02" alt="Sistema mobile">
 </div> 
 
-- [Aplicação WEB](https://github.com/rose-del/ISmalteria/tree/f21bca3ffbd489a5db259237edfe9061f81d6359/ISmalteria-web)
+#### - [Aplicação WEB](https://github.com/rose-del/ISmalteria/tree/f21bca3ffbd489a5db259237edfe9061f81d6359/ISmalteria-web)
  <div>
    <img src="https://github.com/rose-del/ISmalteria/assets/119326136/8ba22350-7c8c-4338-b94a-e6eec2ff452b" alt="Sistema Web">
  </div>
