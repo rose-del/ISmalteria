@@ -68,16 +68,16 @@ export default function Page() {
                     required
                 />
 
-                <input 
-                    className={styles.input}
-                    type="text"
+                <textarea 
+                    className={styles.textarea}
                     placeholder="Descrição do procedimento"
                     value={descricao}
                     onChange={(e) => setDescricao(e.target.value)}
                     required
                 />
-
-                <button className={styles.button} type="submit">Salvar</button>
+                <button className={styles.button} type="submit">Confirmar
+                    <img src="/images/salvar.png" alt="ícone salvar" style={{width: '20px', height: '20px', }}/>
+                </button>
             </form>
         </div>
     );
