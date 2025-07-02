@@ -43,6 +43,7 @@
   background-color: #B2D8D3;
   color: #000000;
   outline: none;
+  resize: vertical;
 }
 
 .button {
@@ -61,4 +62,33 @@
 
 .button:hover {
   background-color: #63948d;
+}
+
+
+/*tela-procedimentos*/
+.lista {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagem {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
 }

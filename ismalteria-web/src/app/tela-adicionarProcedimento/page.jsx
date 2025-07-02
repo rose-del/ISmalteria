@@ -4,27 +4,28 @@ import {useState} from "react";
 import styles from "../page.module.css";
 
 export default function Page() {
-    const [nome, setNome] = useState();
-    const [preco, setPreco] = useState();
-    const [descricao, setDescricao] = useState();
-    const [mensagem, setMensagem] = useState();
+    const [nome, setNome] = useState("");
+    const [preco, setPreco] = useState("");
+    const [descricao, setDescricao] = useState("");
+    const [imagem, setImagem] = useState(null);
+    const [mensagem, setMensagem] = useState("");
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const procedimento = {
-            nome,
-            preco: parseFloat(preco),
-            descricao,
-        };
+        const formData = new FormData();
+
+        formData.append('nome', nome);
+        formData.append('preco', preco);
+        formData.append('descricao', descricao);
+        if (imagem) {
+            formData.append('imagem', imagem);
+        }
 
         try {
             const res = await fetch('/api/procedimentos', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(procedimento),
+                body: formData,
             });
     
             if (res.ok) {
@@ -32,6 +33,7 @@ export default function Page() {
                 setNome("");
                 setPreco("");
                 setDescricao("");
+                setImagem(null);
             } else {
                 const err = await res.json();
                 setMensagem(`Erro: ${err.error || 'Não foi possível cadastrar.'}`);
@@ -74,6 +76,12 @@ export default function Page() {
                     value={descricao}
                     onChange={(e) => setDescricao(e.target.value)}
                     required
+                />
+
+                <input 
+                type="file"
+                accept="image/*"
+                onChange={(e) => setImagem(e.target.files[0])}
                 />
                 <button className={styles.button} type="submit">Confirmar
                     <img src="/images/salvar.png" alt="ícone salvar" style={{width: '20px', height: '20px', }}/>
